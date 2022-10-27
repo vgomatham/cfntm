@@ -7,8 +7,8 @@ import sys
 import datetime
 
 try:
-    from ....libs import deploy_utils
-    from ....modules.timestream_telemetry import libs as timestream_libs
+    from .libs import deploy_utils
+    from .modules.timestream_telemetry import libs as timestream_libs
 except:
     sys.path.append(os.path.join(os.path.dirname(__file__), '../../../libs'))
     sys.path.append(os.path.join(os.path.dirname(__file__), '../../../modules'))
@@ -52,6 +52,7 @@ def parse_args():
 
 # to make scripts resumable, we store sample content start time as a tag in the workspace resource, here we manage access to it
 def get_content_start_time(ws, args_content_start_time):
+    
     ws_content_start_time = ws.fetch_sample_metadata("samples_content_start_time")
     if ws_content_start_time is None:
         if args_content_start_time is None:
@@ -62,6 +63,10 @@ def get_content_start_time(ws, args_content_start_time):
         ws.store_sample_metadata("samples_content_start_time", str(content_start_time))
     else:
         content_start_time = ws_content_start_time
+   
+    print(content_start_time)
+    print(datetime.datetime.now())
+    
     return datetime.datetime.fromtimestamp(float(content_start_time)/1000.0)
 
 def main():
