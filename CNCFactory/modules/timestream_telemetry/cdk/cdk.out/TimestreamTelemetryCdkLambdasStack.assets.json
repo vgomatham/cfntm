@@ -1,0 +1,62 @@
+{
+  "version": "21.0.0",
+  "files": {
+    "08ec09fa9eba5d43e36e5758951de5544fd2954229c09fa816d2ea175f9fe834": {
+      "source": {
+        "path": "asset.08ec09fa9eba5d43e36e5758951de5544fd2954229c09fa816d2ea175f9fe834",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "344000475421-us-west-2": {
+          "bucketName": "cdk-hnb659fds-assets-344000475421-us-west-2",
+          "objectKey": "08ec09fa9eba5d43e36e5758951de5544fd2954229c09fa816d2ea175f9fe834.zip",
+          "region": "us-west-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-file-publishing-role-344000475421-us-west-2"
+        }
+      }
+    },
+    "bf455287977495ce7930e49989ddd9354888fea3f9db8c52b013a108eeff6423": {
+      "source": {
+        "path": "asset.bf455287977495ce7930e49989ddd9354888fea3f9db8c52b013a108eeff6423",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "344000475421-us-west-2": {
+          "bucketName": "cdk-hnb659fds-assets-344000475421-us-west-2",
+          "objectKey": "bf455287977495ce7930e49989ddd9354888fea3f9db8c52b013a108eeff6423.zip",
+          "region": "us-west-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-file-publishing-role-344000475421-us-west-2"
+        }
+      }
+    },
+    "eb5b005c858404ea0c8f68098ed5dcdf5340e02461f149751d10f59c210d5ef8": {
+      "source": {
+        "path": "asset.eb5b005c858404ea0c8f68098ed5dcdf5340e02461f149751d10f59c210d5ef8",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "344000475421-us-west-2": {
+          "bucketName": "cdk-hnb659fds-assets-344000475421-us-west-2",
+          "objectKey": "eb5b005c858404ea0c8f68098ed5dcdf5340e02461f149751d10f59c210d5ef8.zip",
+          "region": "us-west-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-file-publishing-role-344000475421-us-west-2"
+        }
+      }
+    },
+    "d1e045b4b8966860b1e3e6b26f9be6037842fc0d8001db6ad7d25303385e3752": {
+      "source": {
+        "path": "TimestreamTelemetryCdkLambdasStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "344000475421-us-west-2": {
+          "bucketName": "cdk-hnb659fds-assets-344000475421-us-west-2",
+          "objectKey": "d1e045b4b8966860b1e3e6b26f9be6037842fc0d8001db6ad7d25303385e3752.json",
+          "region": "us-west-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-file-publishing-role-344000475421-us-west-2"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

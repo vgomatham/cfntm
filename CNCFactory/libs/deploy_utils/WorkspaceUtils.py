@@ -10,6 +10,7 @@ import botocore
 
 class WorkspaceUtils:
     def __init__(self, workspace_id, endpoint_url, region_name, profile=None):
+        print(region_name);
         self.session = boto3.session.Session(profile_name=profile)
         self.iottwinmaker_client = self.session.client(service_name='iottwinmaker', endpoint_url=endpoint_url, region_name=region_name)
         self.workspace_id = workspace_id

@@ -1,0 +1,137 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "TimestreamTelemetryCdkLambdasStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "TimestreamTelemetryCdkLambdasStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "TimestreamTelemetryCdkLambdasStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://344000475421/us-west-2",
+      "properties": {
+        "templateFile": "TimestreamTelemetryCdkLambdasStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-deploy-role-344000475421-us-west-2",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-cfn-exec-role-344000475421-us-west-2",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-344000475421-us-west-2/d1e045b4b8966860b1e3e6b26f9be6037842fc0d8001db6ad7d25303385e3752.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "TimestreamTelemetryCdkLambdasStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::344000475421:role/cdk-hnb659fds-lookup-role-344000475421-us-west-2",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "cnc-telemetry"
+      },
+      "dependencies": [
+        "TimestreamTelemetryCdkLambdasStack.assets"
+      ],
+      "metadata": {
+        "/TimestreamTelemetryCdkLambdasStack/timestreamUdqRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "timestreamUdqRoleB0A723F2"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/TimestreamTelemetry": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TimestreamTelemetry"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/Telemetry": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Telemetry"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/TimestreamDatabaseName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TimestreamDatabaseName"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/TimestreamTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TimestreamTableName"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/udq_utils_layer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "udqutilslayer88A0F99C"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/timestreamReaderUDQ/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "timestreamReaderUDQAE43A25A"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/timestreamReaderUDQ/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "timestreamReaderUDQLogRetentionE03AEC46"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/TimestreamReaderUDQLambdaArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TimestreamReaderUDQLambdaArn"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/TimestreamTelemetryCdkLambdasStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "TimestreamTelemetryCdkLambdasStack"
+    }
+  }
+}
